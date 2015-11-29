@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{asset "css/font-awesome.min.css"}}">
+	<link rel="stylesheet" href="{{asset "css/screen.css"}}">
+	<link rel="shortcut icon" type="image/png" href="{{asset "/images/glasscode.png"}}"/>
+	<!-- From here -->
+
+</head>
+<body class="{{body_class}}">
+
+<header class="masthead" " style="background-image: url(/content/images/code4.jpg">
+    <div class="header-wrapper">
+            <figure class="logo">
+                        <a href="http://www.burhan.io"><img src="/content/images/glasscode.svg" alt="Burhan Deniz Abdi" title="I love cookies!"></a>
+                </figure>
+            <div class="title">
+                <a href="http://www.burhan.io">
+                        <h1 class="title-header">Burhan Deniz Abdi</h1>
+                </a>
+               <!-- <p> Front-end</p> -->
+                <div class="line"></div>
+            </div>
+            <div class="bottom">
+                        <ul class="menu">
+                                <li><a href="http://www.facebook.com/burhan.d.abdi"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://github.com/V3ckt0r"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.instagram.com/abcb392/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                      <!--  <span class="quote">Let's get magic!</span> -->
+            </div>
+        </div>
+</header>
+
+	{{{body}}}
+
+
+ <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+        <script>
+         var max_pages = parseInt('3');
+        </script>
+        <script src="/assets/js/main-backgr.js"></script>
+
+        <script>
+
+                //Menu Toggle
+          $(document).ready(function() {
+                $("#icon").click(function() {
+                    $(this).toggleClass("active");
+                $("#menu").fadeToggle();
+                });
+          });
+        </script> 
+
+         <script>
+
+                //Code Highlighter
+        $(document).ready(function() {
+          $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+        //Google Analytics
+        
+ 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-70743032-1', 'auto');
+	ga('send', 'pageview');
+   
+        </script>
+
+
+</body>
+</html>
